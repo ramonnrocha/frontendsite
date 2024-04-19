@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minha Landing Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@1.10.3/dist/full.css" rel="stylesheet">
+  <style>
+    .header-box {
+      padding: 0.6rem 0.2rem;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: transparent;
+      z-index: 9999;
+      width: 25%;
+      height: 40%;
+      margin: 2rem auto;
+      border: 2px solid #657ab3;
+
+    }
+
+    .wrapper {
+      width: min(90rem, 100%);
+      margin-inline: auto;
+      padding-inline: 2rem;
+    }
+
+    .color-default {
+      color: #1C2735;
+    }
+
+    .bgimage {
+      height: 80rem;
+    }
+
+    .bgcontato {
+      background-color: #657ab3;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-100 color-default">
+  <div class="wrapper flex">
+    <img width="300" src="assets/logo.png" class="my-10">
+    <div class="header-box">
+      <div class="container flex mx-2 justify-center items-center">
+        <div class="space-x-2">
+          <a href="#" class="btn btn-sm btn-outline-primary font-semi-bold text-xl">Home</a>
+          <a href="#" class="btn btn-sm btn-outline-primary font-semi-bold text-xl">Entrevista</a>
+          <a href="#" class="btn btn-sm btn-outline-primary font-semi-bold  text-xl">Contato</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <section id="apresentacao" class="m-24 wrapper">
+    <p class="font-semi-bold text-2xl text-center mb-12">O grupo Multiplique nasce da necessidade das pessoas em
+      compartilhar suas
+      histórias e<br>
+      experiências de vida.
+    </p>
+
+    <p class="font-semi-bold text-2xl text-center mb-12"> No movimento do contar, a pergunta sobre quem sou eu ou qual o
+      propósito da vida<br>
+      sempre se faz presente, no entanto é preciso saber silenciar e escutar aquilo que<br>
+      verdadeiramente surge nas entrelinhas das experiências contadas sobre sentir medo,<br>
+      angústia, tristeza, solidão, traumas e dores.</p>
+    <p class="font-semi-bold text-2xl text-center mb-12">Na fala, a palavra ganha forma, seja no silêncio que se
+      instala, na emoção que toma<br>
+      conta, naquilo que escapa, no vazio que fica, tudo nos convida a sermos donos do nosso<br>
+      próprio corpo, e autores das nossas próprias experiências de vida.</p>
+  </section>
+  <section id="entrevistas" class="m-24 wrapper">
+    <div class="bg-cover p-8 bg-center bgimage w-full flex flex-col items-center justify-center"
+      style="background-image: url('assets/fundo.png');">
+      <h1 class="text-4xl text-white text-center font-bold mb-12">
+        Entrevistas das <br>nossas palestrantes
+      </h1>
+      <div class="container mx-auto flex flex-col md:flex-row items-center justify-between px-4 mb-12">
+        <div class="md:w-1/2">
+          <iframe width="500" height="315" src="https://www.youtube.com/embed/P3keenWvTLM?si=8qo0k4p1qQ-hjYwV"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <div class="md:w-1/2 md:ml-4 mt-8 md:mt-0 flex flex-col items-end justify-between">
+          <p class="text-xl text-white text-center mb-1 leading-relaxed">Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Facilis iure eveniet voluptatem!
+            Nihil ab libero omnis delectus inventore autem. Suscipit fuga quo vero ipsum tempore ipsam alias tempora
+            provident corporis.</p>
+          <button class="px-8 py-4 border border-gray-300 rounded bg-white rounded-full ">Ler mais</button>
+        </div>
+      </div>
+
+      <div class="container mx-auto flex flex-col md:flex-row items-center justify-between px-4">
+        <div class="md:w-1/2">
+          <iframe width="500" height="315" src="https://www.youtube.com/embed/Ck2bpBt8874?si=PlO2RCXd8hc5CnbJ"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <div class="md:w-1/2 md:ml-4 mt-8 md:mt-0 flex flex-col items-end justify-between">
+          <p class="text-xl text-white text-center mb-1 leading-relaxed">Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Facilis iure eveniet voluptatem!
+            Nihil ab libero omnis delectus inventore autem. Suscipit fuga quo vero ipsum tempore ipsam alias tempora
+            provident corporis.</p>
+          <button class="px-8 py-4 border border-gray-300 rounded bg-white rounded-full ">Ler mais</button>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <section id="contato" class="wrapper mb-12">
+    <div class="flex flex-col items-center justify-center">
+      <p class="text-4xl text-center mb-8">Entre em contato com <br>Multiplique</p>
+      <p class="text-xl text-bold mb-8">Lorem ipsum dolor sit amet consectetur <br>adipisicing elit.</p>
+    </div>
+
+    <div class="max-w-md mx-auto bg-gray-300 flex flex-col space-y-4 bgcontato p-8 unded-lg rounded-md overflow-hidden shadow-md">
+      <div class="flex justify-start space-x-4 items-center ">
+        <div class="bg-white rounded-full w-10 h-10 flex items-center justify-center">
+          <img width="32" height="32" src="https://img.icons8.com/windows/32/657ab3/new-post.png" alt="new-post" />
+        </div>
+        <p class="text-white font-bold text-xl">contato@multiple.com</p>
+      </div>
+      <div class="flex justify-start space-x-4 items-center ">
+      
+        <div class="bg-white rounded-full w-10 h-10 flex items-center justify-center">
+          <img width="24" height="24" src="https://img.icons8.com/material-outlined/24/657ab3/instagram-new--v1.png" alt="instagram-new--v1"/>
+        </div>
+        <p class="text-white font-bold text-xl">@multiple</p>
+      </div>
+      <div class="flex justify-start space-x-4 items-center ">
+      
+        <div class="bg-white rounded-full w-10 h-10 flex items-center justify-center">
+          <img width="24" height="24" src="https://img.icons8.com/material-outlined/24/657ab3/whatsapp--v1.png" alt="whatsapp--v1"/>
+        </div>
+        <p class="text-white font-bold text-xl">(11) 9 9999-9999</p>
+      </div>
+    </div>
+
+
+  </section>
+</body>
+
+</html>
+
+
+
+echo "# frontendsite" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+
+
